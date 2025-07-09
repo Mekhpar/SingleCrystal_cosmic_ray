@@ -5,7 +5,8 @@ void RI_low_25_90_deg()
 {
 //=========Macro generated from canvas: c1/Graph Draw Options
 //=========  (Tue Mar  5 02:42:20 2024) by ROOT version 6.26/08
-   TCanvas *c1 = new TCanvas("c1", "Graph Draw Options",200,31,600,400);
+   //TCanvas *c1 = new TCanvas("c1", "Graph Draw Options",200,31,600,400);
+   TCanvas *c1 = new TCanvas("c1", "Graph Draw Options",0,0,1200,1200);
    c1->Range(0,0,1,1);
    c1->SetFillColor(0);
    c1->SetBorderMode(0);
@@ -13,146 +14,92 @@ void RI_low_25_90_deg()
    c1->SetFrameBorderMode(0);
   
 // ------------>Primitives in pad: c1_1
-   TPad *c1_1 = new TPad("c1_1", "c1_1",0.01,0.51,0.49,0.99);
+   //TPad *c1_1 = new TPad("c1_1", "c1_1",0.01,0.51,0.49,0.99);
+   TPad *c1_1 = new TPad("c1_1", "c1_1", 0.05, 0.05, 0.99, 0.99);
+   c1_1->SetBottomMargin(0.08);
+   c1_1->SetLeftMargin(0.1);
+   c1_1->SetRightMargin(0.05);
+   c1_1->SetTopMargin(0.1);
+   gPad->SetBottomMargin(0.15);
    c1_1->Draw();
+   c1->cd();  
    c1_1->cd();
-   c1_1->Range(-225,-0.3280975,225,2.952877);
-   c1_1->SetFillColor(0);
-   c1_1->SetBorderMode(0);
-   c1_1->SetBorderSize(2);
-   c1_1->SetFrameBorderMode(0);
-   c1_1->SetFrameBorderMode(0);
    
-   TH1F *CutsP1sPLHS__1 = new TH1F("CutsP1sPLHS__1","Angular distribution for photons hitting the downstream surface of the crystal (z = -30 mm) wrt the negative z normal",360,-180,180);
-   CutsP1sPLHS__1->SetBinContent(181,0.001918641);
-   CutsP1sPLHS__1->SetBinContent(182,0.003601389);
-   CutsP1sPLHS__1->SetBinContent(183,0.008194476);
-   CutsP1sPLHS__1->SetBinContent(184,0.01056397);
-   CutsP1sPLHS__1->SetBinContent(185,0.0133511);
-   CutsP1sPLHS__1->SetBinContent(186,0.01453118);
-   CutsP1sPLHS__1->SetBinContent(187,0.01736483);
-   CutsP1sPLHS__1->SetBinContent(188,0.02049541);
-   CutsP1sPLHS__1->SetBinContent(189,0.02543986);
-   CutsP1sPLHS__1->SetBinContent(190,0.02465815);
-   CutsP1sPLHS__1->SetBinContent(191,0.03033238);
-   CutsP1sPLHS__1->SetBinContent(192,0.03173957);
-   CutsP1sPLHS__1->SetBinContent(193,0.03386755);
-   CutsP1sPLHS__1->SetBinContent(194,0.0349968);
-   CutsP1sPLHS__1->SetBinContent(195,0.04178007);
-   CutsP1sPLHS__1->SetBinContent(196,0.04147818);
-   CutsP1sPLHS__1->SetBinContent(197,0.04333139);
-   CutsP1sPLHS__1->SetBinContent(198,0.04088815);
-   CutsP1sPLHS__1->SetBinContent(199,0.04747306);
-   CutsP1sPLHS__1->SetBinContent(200,0.04922953);
-   CutsP1sPLHS__1->SetBinContent(201,0.05270347);
-   CutsP1sPLHS__1->SetBinContent(202,0.05202551);
-   CutsP1sPLHS__1->SetBinContent(203,0.05342464);
-   CutsP1sPLHS__1->SetBinContent(204,0.05497116);
-   CutsP1sPLHS__1->SetBinContent(205,0.05725212);
-   CutsP1sPLHS__1->SetBinContent(206,0.05897328);
-   CutsP1sPLHS__1->SetBinContent(207,0.06129684);
-   CutsP1sPLHS__1->SetBinContent(208,0.06307297);
-   CutsP1sPLHS__1->SetBinContent(209,0.06392575);
-   CutsP1sPLHS__1->SetBinContent(210,0.06700049);
-   CutsP1sPLHS__1->SetBinContent(211,0.0644642);
-   CutsP1sPLHS__1->SetBinContent(212,0.06449477);
-   CutsP1sPLHS__1->SetBinContent(213,0.0687554);
-   CutsP1sPLHS__1->SetBinContent(214,0.06467982);
-   CutsP1sPLHS__1->SetBinContent(215,0.07227511);
-   CutsP1sPLHS__1->SetBinContent(216,0.0703581);
-   CutsP1sPLHS__1->SetBinContent(217,0.06926642);
-   CutsP1sPLHS__1->SetBinContent(218,0.07268301);
-   CutsP1sPLHS__1->SetBinContent(219,0.07516517);
-   CutsP1sPLHS__1->SetBinContent(220,0.07729111);
-   CutsP1sPLHS__1->SetBinContent(221,0.07346768);
-   CutsP1sPLHS__1->SetBinContent(222,0.07564367);
-   CutsP1sPLHS__1->SetBinContent(223,0.07921083);
-   CutsP1sPLHS__1->SetBinContent(224,0.0797362);
-   CutsP1sPLHS__1->SetBinContent(225,0.08599598);
-   CutsP1sPLHS__1->SetBinContent(226,0.08561593);
-   CutsP1sPLHS__1->SetBinContent(227,0.07998532);
-   CutsP1sPLHS__1->SetBinContent(228,0.08698346);
-   CutsP1sPLHS__1->SetBinContent(229,0.08819279);
-   CutsP1sPLHS__1->SetBinContent(230,0.08883123);
-   CutsP1sPLHS__1->SetBinContent(231,0.09025978);
-   CutsP1sPLHS__1->SetBinContent(232,0.09831118);
-   CutsP1sPLHS__1->SetBinContent(233,0.1080332);
-   CutsP1sPLHS__1->SetBinContent(234,0.1074823);
-   CutsP1sPLHS__1->SetBinContent(235,0.7060692);
-   CutsP1sPLHS__1->SetBinContent(236,2.49979);
-   CutsP1sPLHS__1->SetBinContent(237,1.449299);
-   CutsP1sPLHS__1->SetBinContent(238,1.203839);
-   CutsP1sPLHS__1->SetBinContent(239,0.8249567);
-   CutsP1sPLHS__1->SetBinContent(240,0.1076641);
-   CutsP1sPLHS__1->SetBinContent(241,0.08897736);
-   CutsP1sPLHS__1->SetBinContent(242,0.08869353);
-   CutsP1sPLHS__1->SetBinContent(243,0.07997701);
-   CutsP1sPLHS__1->SetBinContent(244,0.07252666);
-   CutsP1sPLHS__1->SetBinContent(245,0.0679189);
-   CutsP1sPLHS__1->SetBinContent(246,0.06485272);
-   CutsP1sPLHS__1->SetBinContent(247,0.06554586);
-   CutsP1sPLHS__1->SetBinContent(248,0.06054933);
-   CutsP1sPLHS__1->SetBinContent(249,0.0584964);
-   CutsP1sPLHS__1->SetBinContent(250,0.05165541);
-   CutsP1sPLHS__1->SetBinContent(251,0.05431472);
-   CutsP1sPLHS__1->SetBinContent(252,0.05072995);
-   CutsP1sPLHS__1->SetBinContent(253,0.04659689);
-   CutsP1sPLHS__1->SetBinContent(254,0.04193214);
-   CutsP1sPLHS__1->SetBinContent(255,0.04322856);
-   CutsP1sPLHS__1->SetBinContent(256,0.03894288);
-   CutsP1sPLHS__1->SetBinContent(257,0.03344719);
-   CutsP1sPLHS__1->SetBinContent(258,0.03349152);
-   CutsP1sPLHS__1->SetBinContent(259,0.03304459);
-   CutsP1sPLHS__1->SetBinContent(260,0.02855944);
-   CutsP1sPLHS__1->SetBinContent(261,0.02424521);
-   CutsP1sPLHS__1->SetBinContent(262,0.02501631);
-   CutsP1sPLHS__1->SetBinContent(263,0.02015862);
-   CutsP1sPLHS__1->SetBinContent(264,0.01653716);
-   CutsP1sPLHS__1->SetBinContent(265,0.01426881);
-   CutsP1sPLHS__1->SetBinContent(266,0.01228482);
-   CutsP1sPLHS__1->SetBinContent(267,0.009861072);
-   CutsP1sPLHS__1->SetBinContent(268,0.007692145);
-   CutsP1sPLHS__1->SetBinContent(269,0.004479294);
-   CutsP1sPLHS__1->SetBinContent(270,0.001014155);
-   CutsP1sPLHS__1->SetBinContent(361,24);
-   CutsP1sPLHS__1->SetEntries(316095);
-   CutsP1sPLHS__1->SetDirectory(0);
-   CutsP1sPLHS__1->SetStats(0);
+   TH1F *Cut_LHS_1 = new TH1F("Cut_LHS_1","",90,0,90);
+   int start_bin_1 = 1;
+   std::vector<float> lhs_1 = {0.001918641,0.003601389,0.008194476,0.01056397,0.0133511,0.01453118,0.01736483,0.02049541,0.02543986,0.02465815,0.03033238,0.03173957,
+   0.03386755,0.0349968,0.04178007,0.04147818,0.04333139,0.04088815,0.04747306,0.04922953,0.05270347,0.05202551,0.05342464,0.05497116,0.05725212,0.05897328,0.06129684,
+   0.06307297,0.06392575,0.06700049,0.0644642,0.06449477,0.0687554,0.06467982,0.07227511,0.0703581,0.06926642,0.07268301,0.07516517,0.07729111,0.07346768,0.07564367,
+   0.07921083,0.0797362,0.08599598,0.08561593,0.07998532,0.08698346,0.08819279,0.08883123,0.09025978,0.09831118,0.1080332,0.1074823,0.7060692,2.49979,1.449299,1.203839,
+   0.8249567,0.1076641,0.08897736,0.08869353,0.07997701,0.07252666,0.0679189,0.06485272,0.06554586,0.06054933,0.0584964,0.05165541,0.05431472,0.05072995,0.04659689,
+   0.04193214,0.04322856,0.03894288,0.03344719,0.03349152,0.03304459,0.02855944,0.02424521,0.02501631,0.02015862,0.01653716,0.01426881,0.01228482,0.009861072,0.007692145,
+   0.004479294,0.001014155};
+
+   for (int i=0; i<lhs_1.size(); i++)
+   {
+    Cut_LHS_1->SetBinContent(start_bin_1+i,lhs_1.at(i));
+   }
+
+   //Cut_LHS_1->SetBinContent(361,24);
+   Cut_LHS_1->SetEntries(316095);
+   Cut_LHS_1->SetDirectory(0);
+   Cut_LHS_1->SetStats(0);
 
    Int_t ci;      // for color index setting
    TColor *color; // for color definition with alpha
-   ci = TColor::GetColor("#000099");
-   CutsP1sPLHS__1->SetLineColor(ci);
-   CutsP1sPLHS__1->GetXaxis()->SetLabelFont(42);
-   CutsP1sPLHS__1->GetXaxis()->SetTitle("Angle wrt -z (in deg)");
-   CutsP1sPLHS__1->GetXaxis()->SetTitleOffset(1);
-   CutsP1sPLHS__1->GetXaxis()->SetTitleFont(42);
-   CutsP1sPLHS__1->GetYaxis()->SetLabelFont(42);
-   CutsP1sPLHS__1->GetYaxis()->SetTitleFont(42);
-   CutsP1sPLHS__1->GetZaxis()->SetLabelFont(42);
-   CutsP1sPLHS__1->GetZaxis()->SetTitleOffset(1);
-   CutsP1sPLHS__1->GetZaxis()->SetTitleFont(42);
-   CutsP1sPLHS__1->Draw("");
+   //ci = TColor::GetColor("#000099");
+   ci = TColor::GetColor("#ff0000");
+   Cut_LHS_1->SetLineColor(ci);
+   Cut_LHS_1->GetXaxis()->SetLabelFont(42);
+   Cut_LHS_1->GetXaxis()->SetTitle("Photon incident angle wrt z axis (in deg)");
+   Cut_LHS_1->GetYaxis()->SetTitle("Number of photons (normalized)");
+   Cut_LHS_1->GetXaxis()->SetTitleOffset(1);
+   Cut_LHS_1->GetXaxis()->SetTitleFont(42);
+   Cut_LHS_1->GetYaxis()->SetLabelFont(42);
+   Cut_LHS_1->GetYaxis()->SetTitleFont(42);
+   Cut_LHS_1->GetZaxis()->SetLabelFont(42);
+   Cut_LHS_1->GetZaxis()->SetTitleOffset(1);
+   Cut_LHS_1->GetZaxis()->SetTitleFont(42);
+   Cut_LHS_1->SetLineWidth(4);
+   Cut_LHS_1->Draw("hist");
    
-   TLegend *leg = new TLegend(0.7,0.8,0.9,0.9,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.03);
+   //TLegend *leg = new TLegend(0.65,0.7,0.85,0.8,NULL,"brNDC");
+   //TLegend *leg = new TLegend(0.625,0.7,0.825,0.8,NULL,"brNDC");
+   //TLegend *leg = new TLegend(0.63,0.7,0.83,0.8,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.63,0.625,0.83,0.875,NULL,"brNDC"); //The y spread is so big because we have to fit 6 lines here (including 2 bold)
+   leg->SetBorderSize(0);
+   //leg->SetTextSize(0.04);
+   leg->SetTextSize(0.038);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
    //TLegendEntry *entry=leg->AddEntry("Cut 1 LHS","Mean = 12283.799805","");
-   TLegendEntry *entry=leg->AddEntry("Cut 1 LHS","Mean = 12283.80","");
-   entry->SetLineColor(1);
+   TLegendEntry *entry=leg->AddEntry("Cut 1 LHS","Upstream","");
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   //entry->SetTextFont(42);
+   entry->SetTextFont(2);
+
+   entry=leg->AddEntry("Cut 1 LHS","Mean = 12283.80","");
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
    entry->SetMarkerStyle(21);
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
+
    entry=leg->AddEntry("Cut 1 LHS","Median = 3933","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -161,6 +108,7 @@ void RI_low_25_90_deg()
    entry->SetTextFont(42);
    leg->Draw();
    
+   /*
    TPaveText *pt = new TPaveText(0.15,0.935,0.85,0.995,"blNDC");
    pt->SetName("title");
    pt->SetBorderSize(0);
@@ -168,142 +116,106 @@ void RI_low_25_90_deg()
    pt->SetFillStyle(0);
    pt->SetTextFont(42);
    pt->SetTextSize(0.03);
-   TText *pt_LaTex = pt->AddText("Angular distribution for photons hitting the downstream surface of the crystal (z = -30 mm) wrt the negative z normal");
+   //TText *pt_LaTex = pt->AddText("Angular distribution for photons hitting the downstream surface of the crystal (z = -30 mm) wrt the negative z normal");
    pt->Draw();
+   */
    c1_1->Modified();
-   c1->cd();
+   //c1->cd();
   
-// ------------>Primitives in pad: c1_2
-   TPad *c1_2 = new TPad("c1_2", "c1_2",0.51,0.51,0.99,0.99);
-   c1_2->Draw();
-   c1_2->cd();
-   c1_2->Range(-225,-0.0681322,225,0.6131898);
-   c1_2->SetFillColor(0);
-   c1_2->SetBorderMode(0);
-   c1_2->SetBorderSize(2);
-   c1_2->SetFrameBorderMode(0);
-   c1_2->SetFrameBorderMode(0);
-   
-   TH1F *CutsP1sPRHS__2 = new TH1F("CutsP1sPRHS__2","Angular distribution for photons hitting the upstream surface of the crystal (z = 30 mm) wrt the positive z normal",360,-180,180);
-   CutsP1sPRHS__2->SetBinContent(181,0.002277818);
-   CutsP1sPRHS__2->SetBinContent(182,0.006938364);
-   CutsP1sPRHS__2->SetBinContent(183,0.01238518);
-   CutsP1sPRHS__2->SetBinContent(184,0.01847103);
-   CutsP1sPRHS__2->SetBinContent(185,0.01987652);
-   CutsP1sPRHS__2->SetBinContent(186,0.02510986);
-   CutsP1sPRHS__2->SetBinContent(187,0.02938364);
-   CutsP1sPRHS__2->SetBinContent(188,0.03165237);
-   CutsP1sPRHS__2->SetBinContent(189,0.04029676);
-   CutsP1sPRHS__2->SetBinContent(190,0.04195105);
-   CutsP1sPRHS__2->SetBinContent(191,0.04732043);
-   CutsP1sPRHS__2->SetBinContent(192,0.04726465);
-   CutsP1sPRHS__2->SetBinContent(193,0.05181004);
-   CutsP1sPRHS__2->SetBinContent(194,0.05316396);
-   CutsP1sPRHS__2->SetBinContent(195,0.06175787);
-   CutsP1sPRHS__2->SetBinContent(196,0.06293272);
-   CutsP1sPRHS__2->SetBinContent(197,0.06292854);
-   CutsP1sPRHS__2->SetBinContent(198,0.0677544);
-   CutsP1sPRHS__2->SetBinContent(199,0.07037759);
-   CutsP1sPRHS__2->SetBinContent(200,0.07458713);
-   CutsP1sPRHS__2->SetBinContent(201,0.07739966);
-   CutsP1sPRHS__2->SetBinContent(202,0.07852858);
-   CutsP1sPRHS__2->SetBinContent(203,0.0810424);
-   CutsP1sPRHS__2->SetBinContent(204,0.08532666);
-   CutsP1sPRHS__2->SetBinContent(205,0.08735096);
-   CutsP1sPRHS__2->SetBinContent(206,0.08701336);
-   CutsP1sPRHS__2->SetBinContent(207,0.08486471);
-   CutsP1sPRHS__2->SetBinContent(208,0.09000035);
-   CutsP1sPRHS__2->SetBinContent(209,0.09046251);
-   CutsP1sPRHS__2->SetBinContent(210,0.09119786);
-   CutsP1sPRHS__2->SetBinContent(211,0.09047257);
-   CutsP1sPRHS__2->SetBinContent(212,0.09346724);
-   CutsP1sPRHS__2->SetBinContent(213,0.09271613);
-   CutsP1sPRHS__2->SetBinContent(214,0.09095519);
-   CutsP1sPRHS__2->SetBinContent(215,0.09819479);
-   CutsP1sPRHS__2->SetBinContent(216,0.0970232);
-   CutsP1sPRHS__2->SetBinContent(217,0.095615);
-   CutsP1sPRHS__2->SetBinContent(218,0.09485884);
-   CutsP1sPRHS__2->SetBinContent(219,0.09283051);
-   CutsP1sPRHS__2->SetBinContent(220,0.09996665);
-   CutsP1sPRHS__2->SetBinContent(221,0.09709617);
-   CutsP1sPRHS__2->SetBinContent(222,0.09194207);
-   CutsP1sPRHS__2->SetBinContent(223,0.09628533);
-   CutsP1sPRHS__2->SetBinContent(224,0.08740323);
-   CutsP1sPRHS__2->SetBinContent(225,0.09251165);
-   CutsP1sPRHS__2->SetBinContent(226,0.09226906);
-   CutsP1sPRHS__2->SetBinContent(227,0.09319219);
-   CutsP1sPRHS__2->SetBinContent(228,0.08624453);
-   CutsP1sPRHS__2->SetBinContent(229,0.09240938);
-   CutsP1sPRHS__2->SetBinContent(230,0.08625483);
-   CutsP1sPRHS__2->SetBinContent(231,0.09261655);
-   CutsP1sPRHS__2->SetBinContent(232,0.08918276);
-   CutsP1sPRHS__2->SetBinContent(233,0.0883765);
-   CutsP1sPRHS__2->SetBinContent(234,0.08801364);
-   CutsP1sPRHS__2->SetBinContent(235,0.1602763);
-   CutsP1sPRHS__2->SetBinContent(236,0.5191025);
-   CutsP1sPRHS__2->SetBinContent(237,0.3001717);
-   CutsP1sPRHS__2->SetBinContent(238,0.22237);
-   CutsP1sPRHS__2->SetBinContent(239,0.1316329);
-   CutsP1sPRHS__2->SetBinContent(240,0.07669483);
-   CutsP1sPRHS__2->SetBinContent(241,0.07692139);
-   CutsP1sPRHS__2->SetBinContent(242,0.07020942);
-   CutsP1sPRHS__2->SetBinContent(243,0.06335004);
-   CutsP1sPRHS__2->SetBinContent(244,0.0632272);
-   CutsP1sPRHS__2->SetBinContent(245,0.06515457);
-   CutsP1sPRHS__2->SetBinContent(246,0.0549778);
-   CutsP1sPRHS__2->SetBinContent(247,0.05439832);
-   CutsP1sPRHS__2->SetBinContent(248,0.04902666);
-   CutsP1sPRHS__2->SetBinContent(249,0.04821309);
-   CutsP1sPRHS__2->SetBinContent(250,0.04414899);
-   CutsP1sPRHS__2->SetBinContent(251,0.04084506);
-   CutsP1sPRHS__2->SetBinContent(252,0.03900862);
-   CutsP1sPRHS__2->SetBinContent(253,0.03617908);
-   CutsP1sPRHS__2->SetBinContent(254,0.03324009);
-   CutsP1sPRHS__2->SetBinContent(255,0.03004815);
-   CutsP1sPRHS__2->SetBinContent(256,0.02618838);
-   CutsP1sPRHS__2->SetBinContent(257,0.02326733);
-   CutsP1sPRHS__2->SetBinContent(258,0.01857295);
-   CutsP1sPRHS__2->SetBinContent(259,0.01881076);
-   CutsP1sPRHS__2->SetBinContent(260,0.01864601);
-   CutsP1sPRHS__2->SetBinContent(261,0.01408222);
-   CutsP1sPRHS__2->SetBinContent(262,0.01107487);
-   CutsP1sPRHS__2->SetBinContent(263,0.01199504);
-   CutsP1sPRHS__2->SetBinContent(264,0.009298509);
-   CutsP1sPRHS__2->SetBinContent(265,0.009382195);
-   CutsP1sPRHS__2->SetBinContent(266,0.005635006);
-   CutsP1sPRHS__2->SetBinContent(267,0.004078874);
-   CutsP1sPRHS__2->SetBinContent(268,0.003220524);
-   CutsP1sPRHS__2->SetBinContent(269,0.001717662);
-   CutsP1sPRHS__2->SetBinContent(270,0.0005778763);
-   CutsP1sPRHS__2->SetBinContent(361,5);
-   CutsP1sPRHS__2->SetEntries(171502);
-   CutsP1sPRHS__2->SetDirectory(0);
-   CutsP1sPRHS__2->SetStats(0);
+   /*
+   string image_path_cut_1_lhs = "0708_90_cut_1_lhs_deg_comp.png";
+   c1->Print(image_path_cut_1_lhs.c_str());
+   c1->Close();
 
-   ci = TColor::GetColor("#000099");
-   CutsP1sPRHS__2->SetLineColor(ci);
-   CutsP1sPRHS__2->GetXaxis()->SetTitle("Angle wrt z (in deg)");
-   CutsP1sPRHS__2->GetXaxis()->SetLabelFont(42);
-   CutsP1sPRHS__2->GetXaxis()->SetTitleOffset(1);
-   CutsP1sPRHS__2->GetXaxis()->SetTitleFont(42);
-   CutsP1sPRHS__2->GetYaxis()->SetLabelFont(42);
-   CutsP1sPRHS__2->GetYaxis()->SetTitleFont(42);
-   CutsP1sPRHS__2->GetZaxis()->SetLabelFont(42);
-   CutsP1sPRHS__2->GetZaxis()->SetTitleOffset(1);
-   CutsP1sPRHS__2->GetZaxis()->SetTitleFont(42);
-   CutsP1sPRHS__2->Draw("");
+   TCanvas *c2 = new TCanvas("c2", "Graph Draw Options",0,0,1200,1200);
+   c2->Range(0,0,1,1);
+   c2->SetFillColor(0);
+   c2->SetBorderMode(0);
+   c2->SetBorderSize(2);
+   c2->SetFrameBorderMode(0);
+   */
+
+// ------------>Primitives in pad: c1_2
+
+   /*
+   TPad *c1_2 = new TPad("c1_2", "c1_2", 0.05, 0.05, 0.99, 0.99);
+   c1_2->SetBottomMargin(0.08);
+   c1_2->SetLeftMargin(0.1);
+   c1_2->SetRightMargin(0.05);
+   c1_2->SetTopMargin(0.1);
+   gPad->SetBottomMargin(0.15);
+   c1_2->Draw();
+   //c2->cd();  
+   c1->cd();  
+   c1_2->cd();
+   */
    
-   leg = new TLegend(0.7,0.8,0.9,0.9,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.03);
+   TH1F *Cut_RHS_2 = new TH1F("Cut_RHS_2","",90,0,90);
+   int start_bin_2 = 1;
+   std::vector<float> rhs_2 = {0.002277818,0.006938364,0.01238518,0.01847103,0.01987652,0.02510986,0.02938364,0.03165237,0.04029676,0.04195105,0.04732043,
+   0.04726465,0.05181004,0.05316396,0.06175787,0.06293272,0.06292854,0.0677544,0.07037759,0.07458713,0.07739966,0.07852858,0.0810424,0.08532666,0.08735096,
+   0.08701336,0.08486471,0.09000035,0.09046251,0.09119786,0.09047257,0.09346724,0.09271613,0.09095519,0.09819479,0.0970232,0.095615,0.09485884,0.09283051,
+   0.09996665,0.09709617,0.09194207,0.09628533,0.08740323,0.09251165,0.09226906,0.09319219,0.08624453,0.09240938,0.08625483,0.09261655,0.08918276,0.0883765,
+   0.08801364,0.1602763,0.5191025,0.3001717,0.22237,0.1316329,0.07669483,0.07692139,0.07020942,0.06335004,0.0632272,0.06515457,0.0549778,0.05439832,0.04902666,
+   0.04821309,0.04414899,0.04084506,0.03900862,0.03617908,0.03324009,0.03004815,0.02618838,0.02326733,0.01857295,0.01881076,0.01864601,0.01408222,0.01107487,
+   0.01199504,0.009298509,0.009382195,0.005635006,0.004078874,0.003220524,0.001717662,0.0005778763};
+   //Cut_RHS_2->SetBinContent(361,5);
+
+   for (int i=0; i<rhs_2.size(); i++)
+   {
+    Cut_RHS_2->SetBinContent(start_bin_2+i,rhs_2.at(i));
+   }
+
+   Cut_RHS_2->SetEntries(171502);
+   Cut_RHS_2->SetDirectory(0);
+   Cut_RHS_2->SetStats(0);
+
+   //ci = TColor::GetColor("#000099");
+   ci = TColor::GetColor("#0000ff");
+   Cut_RHS_2->SetLineColor(ci);
+   Cut_RHS_2->GetXaxis()->SetTitle("Photon incident angle wrt z axis (in deg)");
+   Cut_RHS_2->GetYaxis()->SetTitle("Number of photons (normalized)");
+   Cut_RHS_2->GetXaxis()->SetLabelFont(42);
+   Cut_RHS_2->GetXaxis()->SetTitleOffset(1);
+   Cut_RHS_2->GetXaxis()->SetTitleFont(42);
+   Cut_RHS_2->GetYaxis()->SetLabelFont(42);
+   Cut_RHS_2->GetYaxis()->SetTitleFont(42);
+   Cut_RHS_2->GetZaxis()->SetLabelFont(42);
+   Cut_RHS_2->GetZaxis()->SetTitleOffset(1);
+   Cut_RHS_2->GetZaxis()->SetTitleFont(42);
+   Cut_RHS_2->SetLineWidth(4);   
+   //Cut_RHS_2->Draw("");
+   Cut_RHS_2->Draw("hist same");
+   
+   //leg = new TLegend(0.65,0.7,0.85,0.8,NULL,"brNDC");
+   //leg = new TLegend(0.63,0.7,0.83,0.8,NULL,"brNDC");
+   /*
+   leg = new TLegend(0.63,0.6,0.83,0.7,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   //leg->SetTextSize(0.04);
+   leg->SetTextSize(0.038);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
+   */
+
+   entry=leg->AddEntry("Cut 1 RHS","Downstream","");
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   //entry->SetTextFont(42);
+   entry->SetTextFont(2);
+
    //entry=leg->AddEntry("Cut 1 RHS","Mean = 6500.080078","");
    entry=leg->AddEntry("Cut 1 RHS","Mean = 6500.08","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -311,7 +223,8 @@ void RI_low_25_90_deg()
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    entry=leg->AddEntry("Cut 1 RHS","Median = 2296","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -320,6 +233,7 @@ void RI_low_25_90_deg()
    entry->SetTextFont(42);
    leg->Draw();
    
+   /*
    pt = new TPaveText(0.15,0.935,0.85,0.995,"blNDC");
    pt->SetName("title");
    pt->SetBorderSize(0);
@@ -327,108 +241,101 @@ void RI_low_25_90_deg()
    pt->SetFillStyle(0);
    pt->SetTextFont(42);
    pt->SetTextSize(0.03);
-   pt_LaTex = pt->AddText("Angular distribution for photons hitting the upstream surface of the crystal (z = 30 mm) wrt the positive z normal");
+   //pt_LaTex = pt->AddText("Angular distribution for photons hitting the upstream surface of the crystal (z = 30 mm) wrt the positive z normal");
    pt->Draw();
-   c1_2->Modified();
-   c1->cd();
+   */
+   //c1_2->Modified();
+   c1_1->Modified();
   
-// ------------>Primitives in pad: c1_3
-   TPad *c1_3 = new TPad("c1_3", "c1_3",0.01,0.01,0.49,0.49);
-   c1_3->Draw();
-   c1_3->cd();
-   c1_3->Range(-225,-0.01482202,225,0.1333981);
-   c1_3->SetFillColor(0);
-   c1_3->SetBorderMode(0);
-   c1_3->SetBorderSize(2);
-   c1_3->SetFrameBorderMode(0);
-   c1_3->SetFrameBorderMode(0);
-   
-   TH1F *CutsP2sPLHS__3 = new TH1F("CutsP2sPLHS__3","Angular distribution for photons passing into the cookie, at the downstream crystal-cookie interface (z = -30 mm) wrt the negative z normal",360,-180,180);
-   CutsP2sPLHS__3->SetBinContent(181,0.001179722);
-   CutsP2sPLHS__3->SetBinContent(182,0.003828834);
-   CutsP2sPLHS__3->SetBinContent(183,0.009636763);
-   CutsP2sPLHS__3->SetBinContent(184,0.01575291);
-   CutsP2sPLHS__3->SetBinContent(185,0.01781303);
-   CutsP2sPLHS__3->SetBinContent(186,0.02158703);
-   CutsP2sPLHS__3->SetBinContent(187,0.02473465);
-   CutsP2sPLHS__3->SetBinContent(188,0.02574977);
-   CutsP2sPLHS__3->SetBinContent(189,0.03385337);
-   CutsP2sPLHS__3->SetBinContent(190,0.03747095);
-   CutsP2sPLHS__3->SetBinContent(191,0.04016944);
-   CutsP2sPLHS__3->SetBinContent(192,0.04403633);
-   CutsP2sPLHS__3->SetBinContent(193,0.04725304);
-   CutsP2sPLHS__3->SetBinContent(194,0.04630706);
-   CutsP2sPLHS__3->SetBinContent(195,0.05745102);
-   CutsP2sPLHS__3->SetBinContent(196,0.05676997);
-   CutsP2sPLHS__3->SetBinContent(197,0.06367015);
-   CutsP2sPLHS__3->SetBinContent(198,0.05865516);
-   CutsP2sPLHS__3->SetBinContent(199,0.06725436);
-   CutsP2sPLHS__3->SetBinContent(200,0.07129908);
-   CutsP2sPLHS__3->SetBinContent(201,0.0693218);
-   CutsP2sPLHS__3->SetBinContent(202,0.07236059);
-   CutsP2sPLHS__3->SetBinContent(203,0.0756145);
-   CutsP2sPLHS__3->SetBinContent(204,0.07244932);
-   CutsP2sPLHS__3->SetBinContent(205,0.07742406);
-   CutsP2sPLHS__3->SetBinContent(206,0.08335525);
-   CutsP2sPLHS__3->SetBinContent(207,0.08438363);
-   CutsP2sPLHS__3->SetBinContent(208,0.08510198);
-   CutsP2sPLHS__3->SetBinContent(209,0.08629456);
-   CutsP2sPLHS__3->SetBinContent(210,0.08961435);
-   CutsP2sPLHS__3->SetBinContent(211,0.08716412);
-   CutsP2sPLHS__3->SetBinContent(212,0.08887895);
-   CutsP2sPLHS__3->SetBinContent(213,0.0932593);
-   CutsP2sPLHS__3->SetBinContent(214,0.08994966);
-   CutsP2sPLHS__3->SetBinContent(215,0.09840596);
-   CutsP2sPLHS__3->SetBinContent(216,0.08982792);
-   CutsP2sPLHS__3->SetBinContent(217,0.09507356);
-   CutsP2sPLHS__3->SetBinContent(218,0.09649779);
-   CutsP2sPLHS__3->SetBinContent(219,0.09492308);
-   CutsP2sPLHS__3->SetBinContent(220,0.09339412);
-   CutsP2sPLHS__3->SetBinContent(221,0.0940892);
-   CutsP2sPLHS__3->SetBinContent(222,0.09232536);
-   CutsP2sPLHS__3->SetBinContent(223,0.09625342);
-   CutsP2sPLHS__3->SetBinContent(224,0.09572408);
-   CutsP2sPLHS__3->SetBinContent(225,0.09537594);
-   CutsP2sPLHS__3->SetBinContent(226,0.0941531);
-   CutsP2sPLHS__3->SetBinContent(227,0.08984571);
-   CutsP2sPLHS__3->SetBinContent(228,0.09231009);
-   CutsP2sPLHS__3->SetBinContent(229,0.08603947);
-   CutsP2sPLHS__3->SetBinContent(230,0.07399494);
-   CutsP2sPLHS__3->SetBinContent(231,0.06385752);
-   CutsP2sPLHS__3->SetBinContent(232,0.05651266);
-   CutsP2sPLHS__3->SetBinContent(233,0.04118757);
-   CutsP2sPLHS__3->SetBinContent(234,0.02800168);
-   CutsP2sPLHS__3->SetBinContent(235,0.1129296);
-   CutsP2sPLHS__3->SetBinContent(236,0.001861487);
-   CutsP2sPLHS__3->SetBinContent(361,7996);
-   CutsP2sPLHS__3->SetEntries(139830);
-   CutsP2sPLHS__3->SetDirectory(0);
-   CutsP2sPLHS__3->SetStats(0);
+   //string image_path_cut_1_rhs = "0708_90_cut_1_rhs_deg_comp.png";
+   string image_path_cut_1_rhs = "0708_90_cut_1_lhs_rhs_overlap.png";
+   /*
+   c2->Print(image_path_cut_1_rhs.c_str());
+   c2->Close();
+   */
+   c1->Print(image_path_cut_1_rhs.c_str());
+   c1->Close();
 
-   ci = TColor::GetColor("#000099");
-   CutsP2sPLHS__3->SetLineColor(ci);
-   CutsP2sPLHS__3->GetXaxis()->SetTitle("Angle wrt -z (in deg)");
-   CutsP2sPLHS__3->GetXaxis()->SetLabelFont(42);
-   CutsP2sPLHS__3->GetXaxis()->SetTitleOffset(1);
-   CutsP2sPLHS__3->GetXaxis()->SetTitleFont(42);
-   CutsP2sPLHS__3->GetYaxis()->SetLabelFont(42);
-   CutsP2sPLHS__3->GetYaxis()->SetTitleFont(42);
-   CutsP2sPLHS__3->GetZaxis()->SetLabelFont(42);
-   CutsP2sPLHS__3->GetZaxis()->SetTitleOffset(1);
-   CutsP2sPLHS__3->GetZaxis()->SetTitleFont(42);
-   CutsP2sPLHS__3->Draw("");
+
+   TCanvas *c3 = new TCanvas("c3", "Graph Draw Options",0,0,1200,1200);
+   c3->Range(0,0,1,1);
+   c3->SetFillColor(0);
+   c3->SetBorderMode(0);
+   c3->SetBorderSize(2);
+   c3->SetFrameBorderMode(0);
+
+// ------------>Primitives in pad: c1_3
+   TPad *c1_3 = new TPad("c1_3", "c1_3", 0.05, 0.05, 0.99, 0.99);
+   c1_3->SetBottomMargin(0.08);
+   //c1_3->SetLeftMargin(0.1);
+   c1_3->SetLeftMargin(0.11);
+   c1_3->SetRightMargin(0.05);
+   c1_3->SetTopMargin(0.1);
+   gPad->SetBottomMargin(0.15);
+   c1_3->Draw();
+   c3->cd();  
+   c1_3->cd();
    
-   leg = new TLegend(0.7,0.8,0.9,0.9,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.03);
+   TH1F *Cut_LHS_3 = new TH1F("Cut_LHS_3","",90,0,90);
+   int start_bin_3 = 1;
+   std::vector<float> lhs_3 = {0.001179722,0.003828834,0.009636763,0.01575291,0.01781303,0.02158703,0.02473465,0.02574977,0.03385337,0.03747095,0.04016944,
+   0.04403633,0.04725304,0.04630706,0.05745102,0.05676997,0.06367015,0.05865516,0.06725436,0.07129908,0.0693218,0.07236059,0.0756145,0.07244932,0.07742406,
+   0.08335525,0.08438363,0.08510198,0.08629456,0.08961435,0.08716412,0.08887895,0.0932593,0.08994966,0.09840596,0.08982792,0.09507356,0.09649779,0.09492308,
+   0.09339412,0.0940892,0.09232536,0.09625342,0.09572408,0.09537594,0.0941531,0.08984571,0.09231009,0.08603947,0.07399494,0.06385752,0.05651266,0.04118757,
+   0.02800168,0.1129296,0.001861487};
+   //Cut_LHS_3->SetBinContent(361,7996);
+
+   for (int i=0; i<lhs_3.size(); i++)
+   {
+    Cut_LHS_3->SetBinContent(start_bin_3+i,lhs_3.at(i));
+   }
+
+   Cut_LHS_3->SetEntries(139830);
+   Cut_LHS_3->SetDirectory(0);
+   Cut_LHS_3->SetStats(0);
+
+   //ci = TColor::GetColor("#000099");
+   ci = TColor::GetColor("#ff0000");
+   Cut_LHS_3->SetLineColor(ci);
+   Cut_LHS_3->GetXaxis()->SetTitle("Photon incident angle wrt z axis (in deg)");
+   Cut_LHS_3->GetYaxis()->SetTitle("Number of photons (normalized)");
+   Cut_LHS_3->GetXaxis()->SetLabelFont(42);
+   Cut_LHS_3->GetXaxis()->SetTitleOffset(1);
+   Cut_LHS_3->GetXaxis()->SetTitleFont(42);
+   Cut_LHS_3->GetYaxis()->SetLabelFont(42);
+   Cut_LHS_3->GetYaxis()->SetTitleFont(42);
+   Cut_LHS_3->GetZaxis()->SetLabelFont(42);
+   Cut_LHS_3->GetZaxis()->SetTitleOffset(1);
+   Cut_LHS_3->GetZaxis()->SetTitleFont(42);
+   Cut_LHS_3->SetLineWidth(4);   
+   Cut_LHS_3->Draw("hist");
+   
+   //leg = new TLegend(0.65,0.7,0.85,0.8,NULL,"brNDC");
+   //leg = new TLegend(0.625,0.7,0.825,0.8,NULL,"brNDC");
+   leg = new TLegend(0.625,0.625,0.825,0.875,NULL,"brNDC"); //The y spread is so big because we have to fit 6 lines here (including 2 bold)
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.04);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
+
+   entry=leg->AddEntry("Cut 2 LHS","Upstream","");
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   //entry->SetTextFont(42);
+   entry->SetTextFont(2);
+
    //entry=leg->AddEntry("Cut 2 LHS","Mean = 5233.200195","");
    entry=leg->AddEntry("Cut 2 LHS","Mean = 5233.20","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -436,7 +343,8 @@ void RI_low_25_90_deg()
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    entry=leg->AddEntry("Cut 2 LHS","Median = 1366","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -445,6 +353,7 @@ void RI_low_25_90_deg()
    entry->SetTextFont(42);
    leg->Draw();
    
+   /*
    pt = new TPaveText(0.15,0.935,0.85,0.995,"blNDC");
    pt->SetName("title");
    pt->SetBorderSize(0);
@@ -452,108 +361,100 @@ void RI_low_25_90_deg()
    pt->SetFillStyle(0);
    pt->SetTextFont(42);
    pt->SetTextSize(0.03);
-   pt_LaTex = pt->AddText("Angular distribution for photons passing into the cookie, at the downstream crystal-cookie interface (z = -30 mm) wrt the negative z normal");
+   //pt_LaTex = pt->AddText("Angular distribution for photons passing into the cookie, at the downstream crystal-cookie interface (z = -30 mm) wrt the negative z normal");
    pt->Draw();
+   */
    c1_3->Modified();
-   c1->cd();
-  
-// ------------>Primitives in pad: c1_4
-   TPad *c1_4 = new TPad("c1_4", "c1_4",0.51,0.01,0.99,0.49);
-   c1_4->Draw();
-   c1_4->cd();
-   c1_4->Range(-225,-0.0116243,225,0.1046187);
-   c1_4->SetFillColor(0);
-   c1_4->SetBorderMode(0);
-   c1_4->SetBorderSize(2);
-   c1_4->SetFrameBorderMode(0);
-   c1_4->SetFrameBorderMode(0);
-   
-   TH1F *CutsP2sPRHS__4 = new TH1F("CutsP2sPRHS__4","Angular distribution for photons passing into the cookie, at the upstream crystal-cookie interface (z = 30 mm) wrt the positive z normal",360,-180,180);
-   CutsP2sPRHS__4->SetBinContent(181,0.0007281997);
-   CutsP2sPRHS__4->SetBinContent(182,0.004335998);
-   CutsP2sPRHS__4->SetBinContent(183,0.009145435);
-   CutsP2sPRHS__4->SetBinContent(184,0.01378665);
-   CutsP2sPRHS__4->SetBinContent(185,0.01722933);
-   CutsP2sPRHS__4->SetBinContent(186,0.02209519);
-   CutsP2sPRHS__4->SetBinContent(187,0.02596873);
-   CutsP2sPRHS__4->SetBinContent(188,0.03033973);
-   CutsP2sPRHS__4->SetBinContent(189,0.03680079);
-   CutsP2sPRHS__4->SetBinContent(190,0.03817413);
-   CutsP2sPRHS__4->SetBinContent(191,0.04178259);
-   CutsP2sPRHS__4->SetBinContent(192,0.04572847);
-   CutsP2sPRHS__4->SetBinContent(193,0.04823135);
-   CutsP2sPRHS__4->SetBinContent(194,0.05135862);
-   CutsP2sPRHS__4->SetBinContent(195,0.05794083);
-   CutsP2sPRHS__4->SetBinContent(196,0.060624);
-   CutsP2sPRHS__4->SetBinContent(197,0.0607054);
-   CutsP2sPRHS__4->SetBinContent(198,0.06390823);
-   CutsP2sPRHS__4->SetBinContent(199,0.06683998);
-   CutsP2sPRHS__4->SetBinContent(200,0.07195416);
-   CutsP2sPRHS__4->SetBinContent(201,0.07253966);
-   CutsP2sPRHS__4->SetBinContent(202,0.07438516);
-   CutsP2sPRHS__4->SetBinContent(203,0.07274924);
-   CutsP2sPRHS__4->SetBinContent(204,0.07692273);
-   CutsP2sPRHS__4->SetBinContent(205,0.08048572);
-   CutsP2sPRHS__4->SetBinContent(206,0.07718985);
-   CutsP2sPRHS__4->SetBinContent(207,0.0779126);
-   CutsP2sPRHS__4->SetBinContent(208,0.0822921);
-   CutsP2sPRHS__4->SetBinContent(209,0.0827338);
-   CutsP2sPRHS__4->SetBinContent(210,0.08207668);
-   CutsP2sPRHS__4->SetBinContent(211,0.08259828);
-   CutsP2sPRHS__4->SetBinContent(212,0.08406513);
-   CutsP2sPRHS__4->SetBinContent(213,0.08261194);
-   CutsP2sPRHS__4->SetBinContent(214,0.0835712);
-   CutsP2sPRHS__4->SetBinContent(215,0.08613752);
-   CutsP2sPRHS__4->SetBinContent(216,0.08632514);
-   CutsP2sPRHS__4->SetBinContent(217,0.0844472);
-   CutsP2sPRHS__4->SetBinContent(218,0.08633819);
-   CutsP2sPRHS__4->SetBinContent(219,0.08788798);
-   CutsP2sPRHS__4->SetBinContent(220,0.08856609);
-   CutsP2sPRHS__4->SetBinContent(221,0.08737317);
-   CutsP2sPRHS__4->SetBinContent(222,0.07748608);
-   CutsP2sPRHS__4->SetBinContent(223,0.07702453);
-   CutsP2sPRHS__4->SetBinContent(224,0.07574952);
-   CutsP2sPRHS__4->SetBinContent(225,0.07603751);
-   CutsP2sPRHS__4->SetBinContent(226,0.07633507);
-   CutsP2sPRHS__4->SetBinContent(227,0.07542741);
-   CutsP2sPRHS__4->SetBinContent(228,0.06259916);
-   CutsP2sPRHS__4->SetBinContent(229,0.06586017);
-   CutsP2sPRHS__4->SetBinContent(230,0.05458908);
-   CutsP2sPRHS__4->SetBinContent(231,0.04642335);
-   CutsP2sPRHS__4->SetBinContent(232,0.03490095);
-   CutsP2sPRHS__4->SetBinContent(233,0.02325415);
-   CutsP2sPRHS__4->SetBinContent(234,0.017152);
-   CutsP2sPRHS__4->SetBinContent(235,0.01821993);
-   CutsP2sPRHS__4->SetBinContent(236,0.0003341888);
-   CutsP2sPRHS__4->SetBinContent(361,4402);
-   CutsP2sPRHS__4->SetEntries(102135);
-   CutsP2sPRHS__4->SetDirectory(0);
-   CutsP2sPRHS__4->SetStats(0);
 
-   ci = TColor::GetColor("#000099");
-   CutsP2sPRHS__4->SetLineColor(ci);
-   CutsP2sPRHS__4->GetXaxis()->SetTitle("Angle wrt z (in deg)");
-   CutsP2sPRHS__4->GetXaxis()->SetLabelFont(42);
-   CutsP2sPRHS__4->GetXaxis()->SetTitleOffset(1);
-   CutsP2sPRHS__4->GetXaxis()->SetTitleFont(42);
-   CutsP2sPRHS__4->GetYaxis()->SetLabelFont(42);
-   CutsP2sPRHS__4->GetYaxis()->SetTitleFont(42);
-   CutsP2sPRHS__4->GetZaxis()->SetLabelFont(42);
-   CutsP2sPRHS__4->GetZaxis()->SetTitleOffset(1);
-   CutsP2sPRHS__4->GetZaxis()->SetTitleFont(42);
-   CutsP2sPRHS__4->Draw("");
+   /*
+   string image_path_cut_2_lhs = "0708_90_cut_2_lhs_deg_comp.png";
+   c3->Print(image_path_cut_2_lhs.c_str());
+   c3->Close();   
+  
+   TCanvas *c4 = new TCanvas("c4", "Graph Draw Options",0,0,1200,1200);
+   c4->Range(0,0,1,1);
+   c4->SetFillColor(0);
+   c4->SetBorderMode(0);
+   c4->SetBorderSize(2);
+   c4->SetFrameBorderMode(0);
+   */
+
+// ------------>Primitives in pad: c1_4
+   /*
+   TPad *c1_4 = new TPad("c1_4", "c1_4", 0.05, 0.05, 0.99, 0.99);
+   c1_4->SetBottomMargin(0.08);
+   //c1_4->SetLeftMargin(0.1);
+   c1_4->SetLeftMargin(0.11);
+   c1_4->SetRightMargin(0.05);
+   c1_4->SetTopMargin(0.1);
+   gPad->SetBottomMargin(0.15);
+   c1_4->Draw();
+   //c4->cd();  
+   c3->cd();  
+   c1_4->cd();
+   */
    
-   leg = new TLegend(0.7,0.8,0.9,0.9,NULL,"brNDC");
-   leg->SetBorderSize(1);
-   leg->SetTextSize(0.03);
+   TH1F *Cut_RHS_4 = new TH1F("Cut_RHS_4","",90,0,90);
+   int start_bin_4 = 1;
+   std::vector<float> rhs_4 = {0.0007281997,0.004335998,0.009145435,0.01378665,0.01722933,0.02209519,0.02596873,0.03033973,0.03680079,0.03817413,0.04178259,
+   0.04572847,0.04823135,0.05135862,0.05794083,0.060624,0.0607054,0.06390823,0.06683998,0.07195416,0.07253966,0.07438516,0.07274924,0.07692273,0.08048572,0.07718985,
+   0.0779126,0.0822921,0.0827338,0.08207668,0.08259828,0.08406513,0.08261194,0.0835712,0.08613752,0.08632514,0.0844472,0.08633819,0.08788798,0.08856609,0.08737317,
+   0.07748608,0.07702453,0.07574952,0.07603751,0.07633507,0.07542741,0.06259916,0.06586017,0.05458908,0.04642335,0.03490095,0.02325415,0.017152,0.01821993,
+   0.0003341888};
+   //Cut_RHS_4->SetBinContent(361,4402);
+   for (int i=0; i<rhs_4.size(); i++)
+   {
+    Cut_RHS_4->SetBinContent(start_bin_4+i,rhs_4.at(i));
+   }
+
+   Cut_RHS_4->SetEntries(102135);
+   Cut_RHS_4->SetDirectory(0);
+   Cut_RHS_4->SetStats(0);
+
+   //ci = TColor::GetColor("#000099");
+   ci = TColor::GetColor("#0000ff");
+   Cut_RHS_4->SetLineColor(ci);
+   Cut_RHS_4->GetXaxis()->SetTitle("Photon incident angle wrt z axis (in deg)");
+   Cut_RHS_4->GetYaxis()->SetTitle("Number of photons (normalized)");
+   Cut_RHS_4->GetXaxis()->SetLabelFont(42);
+   Cut_RHS_4->GetXaxis()->SetTitleOffset(1);
+   Cut_RHS_4->GetXaxis()->SetTitleFont(42);
+   Cut_RHS_4->GetYaxis()->SetLabelFont(42);
+   Cut_RHS_4->GetYaxis()->SetTitleFont(42);
+   Cut_RHS_4->GetZaxis()->SetLabelFont(42);
+   Cut_RHS_4->GetZaxis()->SetTitleOffset(1);
+   Cut_RHS_4->GetZaxis()->SetTitleFont(42);
+   Cut_RHS_4->SetLineWidth(4);   
+   //Cut_RHS_4->Draw("");
+   Cut_RHS_4->Draw("hist same");
+   
+   //leg = new TLegend(0.65,0.7,0.85,0.8,NULL,"brNDC");
+   //leg = new TLegend(0.625,0.7,0.825,0.8,NULL,"brNDC");
+   /*
+   leg = new TLegend(0.625,0.6,0.825,0.7,NULL,"brNDC");
+   leg->SetBorderSize(0);
+   leg->SetTextSize(0.04);
    leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);
    leg->SetFillStyle(1001);
+   */
+   entry=leg->AddEntry("Cut 2 RHS","Downstream","");
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
+   entry->SetLineStyle(1);
+   entry->SetLineWidth(1);
+   entry->SetMarkerColor(1);
+   entry->SetMarkerStyle(21);
+   entry->SetMarkerSize(1);
+   //entry->SetTextFont(42);
+   entry->SetTextFont(2);
+
    //entry=leg->AddEntry("Cut 2 RHS","Mean = 3725.399902","");
    entry=leg->AddEntry("Cut 2 RHS","Mean = 3725.40","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -561,7 +462,8 @@ void RI_low_25_90_deg()
    entry->SetMarkerSize(1);
    entry->SetTextFont(42);
    entry=leg->AddEntry("Cut 2 RHS","Median = 1246","");
-   entry->SetLineColor(1);
+   //entry->SetLineColor(1);
+   entry->SetTextColor(ci);
    entry->SetLineStyle(1);
    entry->SetLineWidth(1);
    entry->SetMarkerColor(1);
@@ -570,6 +472,7 @@ void RI_low_25_90_deg()
    entry->SetTextFont(42);
    leg->Draw();
    
+   /*
    pt = new TPaveText(0.15,0.935,0.85,0.995,"blNDC");
    pt->SetName("title");
    pt->SetBorderSize(0);
@@ -577,11 +480,23 @@ void RI_low_25_90_deg()
    pt->SetFillStyle(0);
    pt->SetTextFont(42);
    pt->SetTextSize(0.03);
-   pt_LaTex = pt->AddText("Angular distribution for photons passing into the cookie, at the upstream crystal-cookie interface (z = 30 mm) wrt the positive z normal");
+   //pt_LaTex = pt->AddText("Angular distribution for photons passing into the cookie, at the upstream crystal-cookie interface (z = 30 mm) wrt the positive z normal");
    pt->Draw();
-   c1_4->Modified();
-   c1->cd();
-   c1->Modified();
-   c1->cd();
-   c1->SetSelected(c1);
+   */
+   //c1_4->Modified();
+   c1_3->Modified();
+
+   //string image_path_cut_2_rhs = "0708_90_cut_2_rhs_deg_comp.png";
+   string image_path_cut_2_rhs = "0708_90_cut_2_lhs_rhs_overlap.png";
+   /*
+   c4->Print(image_path_cut_2_rhs.c_str());
+   c4->Close();   
+   */
+
+   c3->Print(image_path_cut_2_rhs.c_str());
+   c3->Close();   
+   
+   gApplication->Terminate();
+   //*/
+
 }
